@@ -1,0 +1,84 @@
+.join{
+    display: flex;
+    padding: 0.2rem;
+    gap: 10rem;
+}
+.left-j{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+.left-j>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+.left-j>div{
+    display: flex;
+    gap: 1rem;
+}
+.right-j{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.email-container{
+    height: 3rem;
+    width: 28rem;
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem;
+}
+.email-container>input{
+    width: 20rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+    color: black;
+}
+::placeholder{
+    color: var(--lightgray);
+}
+.email-container>button{
+    width: 7rem;
+    background-color: var(--orange);
+    color: white;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .join{
+        flex-direction: column;
+    }
+    .left-j{
+        font-size: x-large;
+        position: relative;
+        left: -1rem;
+    }
+    .right-j{
+        flex-direction: column;
+    }
+    .left-j>hr{
+        left: 4.5rem;
+    }
+    .email-container{
+        flex-direction: column;
+        position: relative;
+        top: -15rem;
+        transform: scale(0.6);
+        align-self: center;
+    }
+}
